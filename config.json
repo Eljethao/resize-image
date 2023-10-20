@@ -1,0 +1,21 @@
+{
+    "bucket": "resize-image-bucket1",
+    "resizes": [
+        {
+            "size": 300,
+            "directory": "../resized/small",
+            "acl": "public-read",
+            "cacheControl": "public, max-age=31536000",
+            "quality": 90,
+            "keepExtension": true
+        },
+        {
+            "size": 900,
+            "directory": "../resized/medium",
+            "acl": "public-read",
+            "cacheControl": "public, max-age=31536000",
+            "quality": 80,
+            "keepExtension": true
+        }
+    ]
+}
