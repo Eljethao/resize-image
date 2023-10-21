@@ -110,3 +110,38 @@ new package and automatically publish it on AWS.
 ```bash
 npm run update
 ```
+
+### S3 bucket policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1405592139000",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::lj-image-bucket/*",
+                "arn:aws:s3:::lj-image-bucket"
+            ]
+        }
+    ]
+}
+
+
+### S3 cors 
+ [
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET",
+            "PUT"
+        ],
+        "AllowedOrigins": [
+            "http://localhost:3000"
+        ],
+        "ExposeHeaders": []
+    }
+]

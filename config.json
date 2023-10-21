@@ -1,5 +1,5 @@
 {
-    "bucket": "resize-image-bucket1",
+    "bucket": "demo-resize-bucket",
     "resizes": [
         {
             "size": 300,
